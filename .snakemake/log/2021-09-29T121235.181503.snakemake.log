@@ -1,0 +1,4 @@
+NameError in line 57 of /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/Snakefile:
+name 'rule' is not defined
+  File "/home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/Snakefile", line 58, in <module>
+  File "/home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/Snakefile", line 57, in mergeRootRule

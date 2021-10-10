@@ -1,0 +1,3 @@
+Building DAG of jobs...
+CyclicGraphException in line 171 of /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/Snakefile:
+Cyclic dependency on rule select.

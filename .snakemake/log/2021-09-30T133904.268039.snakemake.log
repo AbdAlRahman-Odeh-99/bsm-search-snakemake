@@ -1,0 +1,23 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	6	select
+	7
+
+[Thu Sep 30 13:39:04 2021]
+rule select:
+    input: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc1.root
+    output: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc1_nominal.root
+    jobid: 15
+    wildcards: base_dir=/home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search, option=mc1, suffix=nominal
+
+InputFunctionException in line 163 of /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/Snakefile:
+KeyError: 'mc1'
+Wildcards:
+base_dir=/home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search
+option=mc1
+suffix=nominal

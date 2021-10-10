@@ -1,0 +1,52 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	3	generate
+	4
+
+[Wed Sep 29 08:22:17 2021]
+rule generate:
+    input: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc1_jobs.json
+    output: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc1_3.root
+    jobid: 5
+    wildcards: base_dir=/home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search, option=mc1, jobnumber=3
+
+
+[Wed Sep 29 08:22:17 2021]
+rule generate:
+    input: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc1_jobs.json
+    output: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc1_4.root
+    jobid: 6
+    wildcards: base_dir=/home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search, option=mc1, jobnumber=4
+
+
+[Wed Sep 29 08:22:17 2021]
+rule generate:
+    input: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc2_jobs.json
+    output: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc2_4.root
+    jobid: 10
+    wildcards: base_dir=/home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search, option=mc2, jobnumber=4
+
+[Wed Sep 29 08:22:18 2021]
+Finished job 5.
+1 of 4 steps (25%) done
+[Wed Sep 29 08:22:19 2021]
+Finished job 10.
+2 of 4 steps (50%) done
+[Wed Sep 29 08:22:19 2021]
+Finished job 6.
+3 of 4 steps (75%) done
+
+[Wed Sep 29 08:22:19 2021]
+localrule all:
+    input: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc1_jobs.json, /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc2_jobs.json, /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc1_1.root, /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc1_2.root, /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc1_3.root, /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc1_4.root, /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc2_1.root, /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc2_2.root, /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc2_3.root, /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc2_4.root
+    jobid: 0
+
+[Wed Sep 29 08:22:19 2021]
+Finished job 0.
+4 of 4 steps (100%) done
+Complete log: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/.snakemake/log/2021-09-29T082217.473802.snakemake.log

@@ -1,0 +1,3 @@
+NameError in line 30 of /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/Snakefile:
+name 'basedir' is not defined
+  File "/home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/Snakefile", line 30, in <module>

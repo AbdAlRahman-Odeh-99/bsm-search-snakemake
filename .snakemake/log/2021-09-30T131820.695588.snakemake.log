@@ -1,0 +1,12 @@
+Building DAG of jobs...
+AmbiguousRuleException:
+Rules generate and select are ambiguous for the file /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc1_shape_conv_up.root.
+Consider starting rule output with a unique prefix, constrain your wildcards, or use the ruleorder directive.
+Wildcards:
+	generate: base_dir=/home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search,jobnumber=shape_conv_up,option=mc1
+	select: base_dir=/home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search,option=mc1,suffix=shape_conv_up
+Expected input files:
+	generate: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc1_jobs.json
+	select: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc1.rootExpected output files:
+	generate: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc1_shape_conv_up.root
+	select: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc1_shape_conv_up.root

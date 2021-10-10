@@ -1,0 +1,3 @@
+NameError in line 27 of /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/Snakefile:
+name 'i' is not defined
+  File "/home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/Snakefile", line 27, in <module>

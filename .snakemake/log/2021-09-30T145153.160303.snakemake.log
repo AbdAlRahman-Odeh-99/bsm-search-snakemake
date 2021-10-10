@@ -1,0 +1,259 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	8	generate
+	4	hist_shape
+	2	merge_root
+	2	scatter
+	6	select
+	23
+
+[Thu Sep 30 14:51:53 2021]
+rule scatter:
+    output: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc1_jobs.json
+    jobid: 1
+    wildcards: base_dir=/home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search, option=mc1
+
+[Thu Sep 30 14:51:53 2021]
+rule scatter:
+    output: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc2_jobs.json
+    jobid: 2
+    wildcards: base_dir=/home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search, option=mc2
+
+[Thu Sep 30 14:51:53 2021]
+Finished job 2.
+1 of 23 steps (4%) done
+
+[Thu Sep 30 14:51:53 2021]
+rule generate:
+    input: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc2_jobs.json
+    output: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc2_4.root
+    jobid: 10
+    wildcards: base_dir=/home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search, option=mc2, jobnumber=4
+
+
+[Thu Sep 30 14:51:53 2021]
+rule generate:
+    input: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc2_jobs.json
+    output: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc2_2.root
+    jobid: 8
+    wildcards: base_dir=/home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search, option=mc2, jobnumber=2
+
+
+[Thu Sep 30 14:51:53 2021]
+rule generate:
+    input: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc2_jobs.json
+    output: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc2_3.root
+    jobid: 9
+    wildcards: base_dir=/home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search, option=mc2, jobnumber=3
+
+[Thu Sep 30 14:51:53 2021]
+Finished job 1.
+2 of 23 steps (9%) done
+
+[Thu Sep 30 14:51:53 2021]
+rule generate:
+    input: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc1_jobs.json
+    output: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc1_1.root
+    jobid: 3
+    wildcards: base_dir=/home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search, option=mc1, jobnumber=1
+
+[Thu Sep 30 14:51:55 2021]
+Finished job 8.
+3 of 23 steps (13%) done
+
+[Thu Sep 30 14:51:55 2021]
+rule generate:
+    input: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc1_jobs.json
+    output: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc1_3.root
+    jobid: 5
+    wildcards: base_dir=/home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search, option=mc1, jobnumber=3
+
+[Thu Sep 30 14:51:55 2021]
+Finished job 9.
+4 of 23 steps (17%) done
+
+[Thu Sep 30 14:51:55 2021]
+rule generate:
+    input: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc1_jobs.json
+    output: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc1_4.root
+    jobid: 6
+    wildcards: base_dir=/home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search, option=mc1, jobnumber=4
+
+[Thu Sep 30 14:51:55 2021]
+Finished job 3.
+5 of 23 steps (22%) done
+
+[Thu Sep 30 14:51:55 2021]
+rule generate:
+    input: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc2_jobs.json
+    output: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc2_1.root
+    jobid: 7
+    wildcards: base_dir=/home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search, option=mc2, jobnumber=1
+
+[Thu Sep 30 14:51:55 2021]
+Finished job 10.
+6 of 23 steps (26%) done
+
+[Thu Sep 30 14:51:55 2021]
+rule generate:
+    input: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc1_jobs.json
+    output: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc1_2.root
+    jobid: 4
+    wildcards: base_dir=/home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search, option=mc1, jobnumber=2
+
+[Thu Sep 30 14:51:57 2021]
+Finished job 6.
+7 of 23 steps (30%) done
+[Thu Sep 30 14:51:57 2021]
+Finished job 5.
+8 of 23 steps (35%) done
+[Thu Sep 30 14:51:57 2021]
+Finished job 7.
+9 of 23 steps (39%) done
+
+[Thu Sep 30 14:51:57 2021]
+rule merge_root:
+    input: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc2_1.root, /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc2_2.root, /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc2_3.root, /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc2_4.root
+    output: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc2.root
+    jobid: 12
+    wildcards: base_dir=/home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search, option=mc2
+
+[Thu Sep 30 14:51:58 2021]
+Finished job 4.
+10 of 23 steps (43%) done
+
+[Thu Sep 30 14:51:58 2021]
+rule merge_root:
+    input: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc1_1.root, /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc1_2.root, /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc1_3.root, /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc1_4.root
+    output: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc1.root
+    jobid: 11
+    wildcards: base_dir=/home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search, option=mc1
+
+[Thu Sep 30 14:51:58 2021]
+Finished job 12.
+11 of 23 steps (48%) done
+
+[Thu Sep 30 14:51:58 2021]
+rule select:
+    input: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc2.root
+    output: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc2_shape_conv_up.root
+    jobid: 16
+    wildcards: base_dir=/home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search, option=mc2, suffix=shape_conv_up
+
+
+[Thu Sep 30 14:51:58 2021]
+rule select:
+    input: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc2.root
+    output: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc2_nominal.root
+    jobid: 18
+    wildcards: base_dir=/home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search, option=mc2, suffix=nominal
+
+
+[Thu Sep 30 14:51:58 2021]
+rule select:
+    input: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc2.root
+    output: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc2_shape_conv_dn.root
+    jobid: 17
+    wildcards: base_dir=/home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search, option=mc2, suffix=shape_conv_dn
+
+[Thu Sep 30 14:51:58 2021]
+Finished job 11.
+12 of 23 steps (52%) done
+
+[Thu Sep 30 14:51:58 2021]
+rule select:
+    input: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc1.root
+    output: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc1_shape_conv_dn.root
+    jobid: 14
+    wildcards: base_dir=/home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search, option=mc1, suffix=shape_conv_dn
+
+[Thu Sep 30 14:52:04 2021]
+Finished job 17.
+13 of 23 steps (57%) done
+
+[Thu Sep 30 14:52:04 2021]
+rule hist_shape:
+    input: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc2_shape_conv_dn.root
+    output: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc2_shape_conv_dn_hist.root
+    jobid: 22
+    wildcards: base_dir=/home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search, option=mc2, shapevar=shape_conv_dn
+
+[Thu Sep 30 14:52:04 2021]
+Finished job 18.
+14 of 23 steps (61%) done
+
+[Thu Sep 30 14:52:04 2021]
+rule select:
+    input: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc1.root
+    output: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc1_nominal.root
+    jobid: 15
+    wildcards: base_dir=/home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search, option=mc1, suffix=nominal
+
+[Thu Sep 30 14:52:04 2021]
+Finished job 16.
+15 of 23 steps (65%) done
+
+[Thu Sep 30 14:52:04 2021]
+rule hist_shape:
+    input: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc2_shape_conv_up.root
+    output: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc2_shape_conv_up_hist.root
+    jobid: 21
+    wildcards: base_dir=/home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search, option=mc2, shapevar=shape_conv_up
+
+[Thu Sep 30 14:52:04 2021]
+Finished job 14.
+16 of 23 steps (70%) done
+
+[Thu Sep 30 14:52:04 2021]
+rule select:
+    input: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc1.root
+    output: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc1_shape_conv_up.root
+    jobid: 13
+    wildcards: base_dir=/home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search, option=mc1, suffix=shape_conv_up
+
+[Thu Sep 30 14:52:04 2021]
+Error in rule hist_shape:
+    jobid: 22
+    output: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc2_shape_conv_dn_hist.root
+    shell:
+        
+        
+        set -x
+        source /home/abd/root/root/bin/thisroot.sh        
+        variations=$(echo nominal|sed 's| |,|g')
+        name="mc2_shape_conv_dn"
+        python /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/code/histogram.py /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc2_shape_conv_dn.root /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc2_shape_conv_dn_hist.root mc2 0.0125 $variations $name    
+        
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Sep 30 14:52:04 2021]
+Error in rule hist_shape:
+    jobid: 21
+    output: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc2_shape_conv_up_hist.root
+    shell:
+        
+        
+        set -x
+        source /home/abd/root/root/bin/thisroot.sh        
+        variations=$(echo nominal|sed 's| |,|g')
+        name="mc2_shape_conv_up"
+        python /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/code/histogram.py /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc2_shape_conv_up.root /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc2_shape_conv_up_hist.root mc2 0.0125 $variations $name    
+        
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Sep 30 14:52:07 2021]
+Finished job 15.
+17 of 23 steps (74%) done
+[Thu Sep 30 14:52:07 2021]
+Finished job 13.
+18 of 23 steps (78%) done
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/.snakemake/log/2021-09-30T145153.160303.snakemake.log

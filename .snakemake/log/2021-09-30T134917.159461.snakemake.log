@@ -1,0 +1,23 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	6	select
+	7
+
+[Thu Sep 30 13:49:17 2021]
+rule select:
+    input: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc2.root
+    output: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc2_shape_conv_dn.root
+    jobid: 17
+    wildcards: base_dir=/home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search, option=mc2, suffix=shape_conv_dn
+
+InputFunctionException in line 163 of /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/Snakefile:
+NameError: name 'thisroot' is not defined
+Wildcards:
+base_dir=/home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search
+option=mc2
+suffix=shape_conv_dn

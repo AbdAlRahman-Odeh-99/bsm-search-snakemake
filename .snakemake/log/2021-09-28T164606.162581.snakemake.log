@@ -1,0 +1,23 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	4	generate
+	5
+
+[Tue Sep 28 16:46:06 2021]
+rule generate:
+    input: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc1_jobs.json, /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc2_jobs.json
+    output: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc1_mc1.json
+    jobid: 3
+    wildcards: base_dir=/home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search, option=mc1, jobnumber=mc1
+
+InputFunctionException in line 40 of /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/Snakefile:
+ValueError: invalid literal for int() with base 10: 'mc1'
+Wildcards:
+base_dir=/home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search
+option=mc1
+jobnumber=mc1

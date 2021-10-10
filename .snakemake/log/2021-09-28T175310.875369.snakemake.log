@@ -1,0 +1,22 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	4	generate_mc1
+	5
+
+[Tue Sep 28 17:53:10 2021]
+rule generate_mc1:
+    input: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc1_jobs.json
+    output: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc1_1.json
+    jobid: 4
+    wildcards: base_dir=/home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search, jobnumber=1
+
+InputFunctionException in line 55 of /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/Snakefile:
+TypeError: forgeGenerateCommand() missing 1 required positional argument: 'jobnumber'
+Wildcards:
+base_dir=/home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search
+jobnumber=1

@@ -1,0 +1,4 @@
+CreateRuleException in line 46 of /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/Snakefile:
+The name option_merge_root is already used by another rule
+  File "/home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/Snakefile", line 59, in <module>
+  File "/home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/Snakefile", line 46, in mergeRootRule

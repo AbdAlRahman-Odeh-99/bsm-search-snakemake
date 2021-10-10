@@ -1,0 +1,4 @@
+KeyError in line 50 of /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/Snakefile:
+'END'
+  File "/home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/Snakefile", line 64, in <module>
+  File "/home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/Snakefile", line 50, in mergeRootRule

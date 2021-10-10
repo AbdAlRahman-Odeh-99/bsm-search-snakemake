@@ -1,0 +1,5 @@
+NameError in line 21 of /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/Snakefile:
+name 'thisroot' is not defined
+  File "/home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/Snakefile", line 58, in <module>
+  File "/home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/Snakefile", line 52, in mergeRootRule
+  File "/home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/Snakefile", line 21, in forgeMergeRootCommand

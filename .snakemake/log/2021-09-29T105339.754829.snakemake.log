@@ -1,0 +1,4 @@
+ValueError in line 50 of /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/Snakefile:
+unexpected '{' in field name
+  File "/home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/Snakefile", line 63, in <module>
+  File "/home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/Snakefile", line 50, in mergeRootRule

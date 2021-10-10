@@ -1,0 +1,26 @@
+base_dir:
+  '/home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search'
+
+code_dir:
+  '/home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/code'
+
+thisroot_dir:
+  '/home/abd/root/root/bin'
+
+mc_options:
+  mc1: { 'type': 'mc1', 'mcweight': '0.01875', 'nevents': '40000', 'njobs': 4 }
+  mc2: { 'type': 'mc2', 'mcweight': '0.0125', 'nevents': '40000', 'njobs': 4 }
+
+select_mc_options:
+  shape_conv_up: {'region': 'signal', 'variation': 'shape_conv_up', 'suffix': 'shape_conv_up' }
+  shape_conv_dn: { 'region': 'signal', 'variation': 'shape_conv_dn', 'suffix': 'shape_conv_dn'}
+  nominal: { 'region': 'signal', 'variation': 'nominal,weight_var1_up,weight_var1_dn', 'suffix': 'nominal' }
+
+hist_shape_mc_options:
+  - 'shape_conv_up'
+  - 'shape_conv_dn'
+
+variations:
+  mc1: 'nominal'
+  mc2: 'nominal'
+

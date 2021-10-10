@@ -1,0 +1,12 @@
+Building DAG of jobs...
+AmbiguousRuleException:
+Rules scatter and generate_mc1 are ambiguous for the file /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc2_jobs.json.
+Consider starting rule output with a unique prefix, constrain your wildcards, or use the ruleorder directive.
+Wildcards:
+	scatter: base_dir=/home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search,option=mc2
+	generate_mc1: base_dir=/home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search,entry_type=mc2,jobnumber=jobs
+Expected input files:
+	scatter: 
+	generate_mc1: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc1_jobs.jsonExpected output files:
+	scatter: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc2_jobs.json
+	generate_mc1: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc2_jobs.json

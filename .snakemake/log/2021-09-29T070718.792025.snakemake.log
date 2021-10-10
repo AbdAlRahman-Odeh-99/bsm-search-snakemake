@@ -1,0 +1,59 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	4	generate_mc1
+	5
+
+[Wed Sep 29 07:07:18 2021]
+rule generate_mc1:
+    input: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc1_jobs.json
+    output: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc1_2.json
+    jobid: 5
+    wildcards: base_dir=/home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search, jobnumber=2
+
+
+[Wed Sep 29 07:07:18 2021]
+rule generate_mc1:
+    input: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc1_jobs.json
+    output: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc1_0.json
+    jobid: 3
+    wildcards: base_dir=/home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search, jobnumber=0
+
+Waiting at most 5 seconds for missing files.
+
+[Wed Sep 29 07:07:18 2021]
+rule generate_mc1:
+    input: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc1_jobs.json
+    output: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc1_1.json
+    jobid: 4
+    wildcards: base_dir=/home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search, jobnumber=1
+
+
+[Wed Sep 29 07:07:18 2021]
+rule generate_mc1:
+    input: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc1_jobs.json
+    output: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc1_3.json
+    jobid: 6
+    wildcards: base_dir=/home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search, jobnumber=3
+
+Terminating processes on user request, this might take some time.
+MissingOutputException in line 55 of /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/Snakefile:
+Missing files after 5 seconds:
+/home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc1_2.json
+This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait.
+Waiting at most 5 seconds for missing files.
+MissingOutputException in line 55 of /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/Snakefile:
+Missing files after 5 seconds:
+/home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc1_1.json
+This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait.
+Waiting at most 5 seconds for missing files.
+MissingOutputException in line 55 of /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/Snakefile:
+Missing files after 5 seconds:
+/home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc1_0.json
+This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait.
+Waiting at most 5 seconds for missing files.
+Cancelling snakemake on user request.

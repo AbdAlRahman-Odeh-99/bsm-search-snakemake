@@ -1,0 +1,100 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	4	generate_mc1
+	5
+
+[Wed Sep 29 07:23:54 2021]
+rule generate_mc1:
+    input: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc1_jobs.json
+    output: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc1_2.json
+    jobid: 4
+    wildcards: base_dir=/home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search, option=mc1, jobnumber=2
+
+
+[Wed Sep 29 07:23:54 2021]
+rule generate_mc1:
+    input: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc1_jobs.json
+    output: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc1_1.json
+    jobid: 3
+    wildcards: base_dir=/home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search, option=mc1, jobnumber=1
+
+[Wed Sep 29 07:23:54 2021]
+Error in rule generate_mc1:
+    jobid: 4
+    output: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc1_2.json
+    shell:
+        
+        
+            set -x
+            source {thisroot_dir}/thisroot.sh
+            python {code_dir}/generatetuple.py {option} {nevents} {base_dir}/{option}_{jobnumber}.root
+            
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+
+[Wed Sep 29 07:23:54 2021]
+rule generate_mc1:
+    input: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc1_jobs.json
+    output: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc1_3.json
+    jobid: 5
+    wildcards: base_dir=/home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search, option=mc1, jobnumber=3
+
+
+[Wed Sep 29 07:23:54 2021]
+Error in rule generate_mc1:
+    jobid: 3
+    output: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc1_1.json
+    shell:
+        
+        
+            set -x
+            source {thisroot_dir}/thisroot.sh
+            python {code_dir}/generatetuple.py {option} {nevents} {base_dir}/{option}_{jobnumber}.root
+            
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Wed Sep 29 07:23:54 2021]
+rule generate_mc1:
+    input: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc1_jobs.json
+    output: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc1_0.json
+    jobid: 2
+    wildcards: base_dir=/home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search, option=mc1, jobnumber=0
+
+[Wed Sep 29 07:23:54 2021]
+Error in rule generate_mc1:
+    jobid: 5
+    output: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc1_3.json
+    shell:
+        
+        
+            set -x
+            source {thisroot_dir}/thisroot.sh
+            python {code_dir}/generatetuple.py {option} {nevents} {base_dir}/{option}_{jobnumber}.root
+            
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Wed Sep 29 07:23:54 2021]
+Error in rule generate_mc1:
+    jobid: 2
+    output: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc1_0.json
+    shell:
+        
+        
+            set -x
+            source {thisroot_dir}/thisroot.sh
+            python {code_dir}/generatetuple.py {option} {nevents} {base_dir}/{option}_{jobnumber}.root
+            
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/.snakemake/log/2021-09-29T072354.220604.snakemake.log

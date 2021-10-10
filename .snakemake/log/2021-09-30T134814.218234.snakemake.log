@@ -1,0 +1,64 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	6	select
+	7
+
+[Thu Sep 30 13:48:14 2021]
+rule select:
+    input: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc2.root
+    output: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc2_shape_conv_up.root
+    jobid: 16
+    wildcards: base_dir=/home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search, option=mc2, suffix=shape_conv_up
+
+
+[Thu Sep 30 13:48:14 2021]
+rule select:
+    input: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc1.root
+    output: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc1_shape_conv_dn.root
+    jobid: 14
+    wildcards: base_dir=/home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search, option=mc1, suffix=shape_conv_dn
+
+Waiting at most 5 seconds for missing files.
+
+[Thu Sep 30 13:48:14 2021]
+rule select:
+    input: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc2.root
+    output: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc2_shape_conv_dn.root
+    jobid: 17
+    wildcards: base_dir=/home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search, option=mc2, suffix=shape_conv_dn
+
+
+[Thu Sep 30 13:48:14 2021]
+rule select:
+    input: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc2.root
+    output: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc2_nominal.root
+    jobid: 18
+    wildcards: base_dir=/home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search, option=mc2, suffix=nominal
+
+MissingOutputException in line 163 of /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/Snakefile:
+Missing files after 5 seconds:
+/home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc2_shape_conv_up.root
+This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait.
+Waiting at most 5 seconds for missing files.
+MissingOutputException in line 163 of /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/Snakefile:
+Missing files after 5 seconds:
+/home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc1_shape_conv_dn.root
+This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait.
+Waiting at most 5 seconds for missing files.
+MissingOutputException in line 163 of /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/Snakefile:
+Missing files after 5 seconds:
+/home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc2_shape_conv_dn.root
+This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait.
+Waiting at most 5 seconds for missing files.
+MissingOutputException in line 163 of /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/Snakefile:
+Missing files after 5 seconds:
+/home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc2_nominal.root
+This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait.
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/.snakemake/log/2021-09-30T134814.218234.snakemake.log

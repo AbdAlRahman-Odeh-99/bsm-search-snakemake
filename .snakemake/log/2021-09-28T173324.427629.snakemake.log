@@ -1,0 +1,4 @@
+ValueError in line 12 of /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/Snakefile:
+invalid literal for int() with base 10: '{jobnumber}'
+  File "/home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/Snakefile", line 62, in <module>
+  File "/home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/Snakefile", line 12, in forgeGenerateCommand

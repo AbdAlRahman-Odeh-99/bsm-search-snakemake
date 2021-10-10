@@ -1,0 +1,4 @@
+NameError in line 12 of /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/Snakefile:
+name 'wildcards' is not defined
+  File "/home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/Snakefile", line 62, in <module>
+  File "/home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/Snakefile", line 12, in forgeGenerateCommand

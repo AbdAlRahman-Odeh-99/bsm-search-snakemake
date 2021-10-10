@@ -1,0 +1,3 @@
+NameError in line 106 of /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/Snakefile:
+name 'select_mc_options' is not defined
+  File "/home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/Snakefile", line 106, in <module>

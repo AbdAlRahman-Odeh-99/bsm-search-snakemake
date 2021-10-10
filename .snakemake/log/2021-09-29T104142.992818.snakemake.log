@@ -1,0 +1,4 @@
+WildcardError in line 44 of /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/Snakefile:
+No values given for wildcard 'file'.
+  File "/home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/Snakefile", line 63, in <module>
+  File "/home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/Snakefile", line 44, in mergeRootRule

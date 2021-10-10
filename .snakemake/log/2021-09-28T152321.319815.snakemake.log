@@ -1,0 +1,2 @@
+SyntaxError in line 26 of /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/Snakefile:
+EOF in multi-line statement (Snakefile, line 26)

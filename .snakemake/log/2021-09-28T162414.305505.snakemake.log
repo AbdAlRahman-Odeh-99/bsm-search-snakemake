@@ -1,0 +1,3 @@
+KeyError in line 47 of /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/Snakefile:
+<class 'type'>
+  File "/home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/Snakefile", line 47, in <module>

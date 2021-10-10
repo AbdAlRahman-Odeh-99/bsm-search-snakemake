@@ -1,0 +1,38 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	6	generate
+	6	scatter
+	13
+
+[Thu Sep 30 12:35:55 2021]
+rule scatter:
+    output: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc1_[OrderedDict([('region', 'signal')]), OrderedDict([('variation', 'shape_conv_dn')]), OrderedDict([('suffix', 'shape_conv_jobs.json
+    jobid: 20
+    wildcards: base_dir=/home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search, option=mc1_[OrderedDict([('region', 'signal')]), OrderedDict([('variation', 'shape_conv_dn')]), OrderedDict([('suffix', 'shape_conv
+
+[Thu Sep 30 12:35:55 2021]
+rule scatter:
+    output: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc1_[OrderedDict([('region', 'signal')]), OrderedDict([('variation', 'nominal,weight_var1_up,weight_var1_jobs.json
+    jobid: 21
+    wildcards: base_dir=/home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search, option=mc1_[OrderedDict([('region', 'signal')]), OrderedDict([('variation', 'nominal,weight_var1_up,weight_var1
+
+[Thu Sep 30 12:35:55 2021]
+rule scatter:
+    output: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc1_[OrderedDict([('region', 'signal')]), OrderedDict([('variation', 'shape_conv_up')]), OrderedDict([('suffix', 'shape_conv_jobs.json
+    jobid: 19
+    wildcards: base_dir=/home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search, option=mc1_[OrderedDict([('region', 'signal')]), OrderedDict([('variation', 'shape_conv_up')]), OrderedDict([('suffix', 'shape_conv
+
+[Thu Sep 30 12:35:55 2021]
+rule scatter:
+    output: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc2_[OrderedDict([('region', 'signal')]), OrderedDict([('variation', 'shape_conv_dn')]), OrderedDict([('suffix', 'shape_conv_jobs.json
+    jobid: 23
+    wildcards: base_dir=/home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search, option=mc2_[OrderedDict([('region', 'signal')]), OrderedDict([('variation', 'shape_conv_dn')]), OrderedDict([('suffix', 'shape_conv
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/.snakemake/log/2021-09-30T123555.472143.snakemake.log

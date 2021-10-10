@@ -1,0 +1,22 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	prepare_dir
+	1
+
+[Tue Sep 28 14:44:31 2021]
+rule prepare_dir:
+    output: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search
+    jobid: 0
+
+ImproperOutputException in line 3 of /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/Snakefile:
+Outputs of incorrect type (directories when expecting files or vice versa). Output directories must be flagged with directory(). for rule prepare_dir:
+/home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search
+Removing output files of failed job prepare_dir since they might be corrupted:
+/home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/.snakemake/log/2021-09-28T144431.699365.snakemake.log

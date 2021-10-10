@@ -1,0 +1,3 @@
+NameError in line 116 of /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/Snakefile:
+name 'option' is not defined
+  File "/home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/Snakefile", line 116, in <module>

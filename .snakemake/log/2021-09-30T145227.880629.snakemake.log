@@ -1,0 +1,108 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	4	hist_shape
+	5
+
+[Thu Sep 30 14:52:27 2021]
+rule hist_shape:
+    input: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc2_shape_conv_dn.root
+    output: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc2_shape_conv_dn_hist.root
+    jobid: 22
+    wildcards: base_dir=/home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search, option=mc2, shapevar=shape_conv_dn
+
+
+[Thu Sep 30 14:52:27 2021]
+rule hist_shape:
+    input: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc1_shape_conv_dn.root
+    output: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc1_shape_conv_dn_hist.root
+    jobid: 20
+    wildcards: base_dir=/home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search, option=mc1, shapevar=shape_conv_dn
+
+
+[Thu Sep 30 14:52:27 2021]
+rule hist_shape:
+    input: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc2_shape_conv_up.root
+    output: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc2_shape_conv_up_hist.root
+    jobid: 21
+    wildcards: base_dir=/home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search, option=mc2, shapevar=shape_conv_up
+
+
+[Thu Sep 30 14:52:27 2021]
+rule hist_shape:
+    input: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc1_shape_conv_up.root
+    output: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc1_shape_conv_up_hist.root
+    jobid: 19
+    wildcards: base_dir=/home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search, option=mc1, shapevar=shape_conv_up
+
+[Thu Sep 30 14:52:28 2021]
+Error in rule hist_shape:
+    jobid: 22
+    output: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc2_shape_conv_dn_hist.root
+    shell:
+        
+        
+        set -x
+        source /home/abd/root/root/bin/thisroot.sh        
+        variations=$(echo nominal|sed 's| |,|g')
+        name="mc2_shape_conv_dn"
+        python /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/code/histogram.py /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc2_shape_conv_dn.root /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc2_shape_conv_dn_hist.root mc2 0.0125 $variations $name    
+        
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Sep 30 14:52:28 2021]
+Error in rule hist_shape:
+    jobid: 21
+    output: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc2_shape_conv_up_hist.root
+    shell:
+        
+        
+        set -x
+        source /home/abd/root/root/bin/thisroot.sh        
+        variations=$(echo nominal|sed 's| |,|g')
+        name="mc2_shape_conv_up"
+        python /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/code/histogram.py /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc2_shape_conv_up.root /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc2_shape_conv_up_hist.root mc2 0.0125 $variations $name    
+        
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Sep 30 14:52:28 2021]
+Error in rule hist_shape:
+    jobid: 20
+    output: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc1_shape_conv_dn_hist.root
+    shell:
+        
+        
+        set -x
+        source /home/abd/root/root/bin/thisroot.sh        
+        variations=$(echo nominal|sed 's| |,|g')
+        name="mc1_shape_conv_dn"
+        python /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/code/histogram.py /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc1_shape_conv_dn.root /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc1_shape_conv_dn_hist.root mc1 0.01875 $variations $name    
+        
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Sep 30 14:52:28 2021]
+Error in rule hist_shape:
+    jobid: 19
+    output: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc1_shape_conv_up_hist.root
+    shell:
+        
+        
+        set -x
+        source /home/abd/root/root/bin/thisroot.sh        
+        variations=$(echo nominal|sed 's| |,|g')
+        name="mc1_shape_conv_up"
+        python /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/code/histogram.py /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc1_shape_conv_up.root /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc1_shape_conv_up_hist.root mc1 0.01875 $variations $name    
+        
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/.snakemake/log/2021-09-30T145227.880629.snakemake.log

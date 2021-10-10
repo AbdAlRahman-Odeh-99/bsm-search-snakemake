@@ -1,0 +1,2 @@
+SyntaxError in line 59 of /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/Snakefile:
+Unexpected keyword temp in rule definition (Snakefile, line 59)

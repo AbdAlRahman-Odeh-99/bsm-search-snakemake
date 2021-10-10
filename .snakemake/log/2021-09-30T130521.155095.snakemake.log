@@ -1,0 +1,3 @@
+KeyError in line 8 of /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/Snakefile:
+'select_mc_options'
+  File "/home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/Snakefile", line 8, in <module>

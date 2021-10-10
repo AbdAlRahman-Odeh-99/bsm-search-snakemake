@@ -1,0 +1,4 @@
+Building DAG of jobs...
+MissingInputException in line 60 of /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/Snakefile:
+Missing input files for rule all:
+/home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc1.root

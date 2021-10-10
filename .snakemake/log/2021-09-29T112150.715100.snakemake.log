@@ -1,0 +1,2 @@
+SyntaxError in line 46 of /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/Snakefile:
+Expected name or colon after rule keyword. (Snakefile, line 46)

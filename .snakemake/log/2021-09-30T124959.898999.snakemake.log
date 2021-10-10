@@ -1,0 +1,6 @@
+Building DAG of jobs...
+InputFunctionException in line 149 of /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/Snakefile:
+KeyError: 'mc1_1'
+Wildcards:
+base_dir=/home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search
+option=mc1_1

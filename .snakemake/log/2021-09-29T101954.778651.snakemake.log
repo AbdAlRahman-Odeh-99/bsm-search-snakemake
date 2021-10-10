@@ -1,0 +1,4 @@
+Building DAG of jobs...
+WildcardError in line 84 of /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/Snakefile:
+Wildcards in input files cannot be determined from output files:
+'jobnumber'

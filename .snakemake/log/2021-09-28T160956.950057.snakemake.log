@@ -1,0 +1,3 @@
+KeyError in line 45 of /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/Snakefile:
+'{option}'
+  File "/home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/Snakefile", line 45, in <module>

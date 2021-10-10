@@ -1,0 +1,39 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	1	merge_root
+	2
+
+[Wed Sep 29 10:58:11 2021]
+rule merge_root:
+    input: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc1_1.root, /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc1_2.root, /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc1_3.root, /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc1_4.root
+    output: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc1.root
+    jobid: 11
+
+[Wed Sep 29 10:58:11 2021]
+Error in rule merge_root:
+    jobid: 11
+    output: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc1.root
+    shell:
+        
+            set -x
+            BASE_DIR=/home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search
+            BASE=mc1
+            END=4
+            INPUTS=""
+            for ((c=1;c<$END+1;c++)); do
+                INPUTS="$INPUTS $(printf $BASE_DIR/$BASE_$c.root)"
+            done
+            echo Inputs: $INPUTS
+            source /home/abd/root/root/bin/thisroot.sh
+            hadd -f $BASE_DIR/$BASE.root $INPUTS
+            
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/.snakemake/log/2021-09-29T105811.083627.snakemake.log

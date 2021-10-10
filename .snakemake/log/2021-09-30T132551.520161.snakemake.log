@@ -1,0 +1,2 @@
+SyntaxError in line 111 of /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/Snakefile:
+Unexpected keyword ruleorder in rule definition (Snakefile, line 111)

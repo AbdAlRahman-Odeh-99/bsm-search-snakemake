@@ -1,0 +1,4 @@
+FileNotFoundError in line 20 of /home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/Snakefile:
+[Errno 2] No such file or directory: '/home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/data/bsm-search/mc1_jobs.json'
+  File "/home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/Snakefile", line 31, in <module>
+  File "/home/abd/Desktop/Work/Snakemake/bsm-search-snakemake/Snakefile", line 20, in forgeJobnumber
